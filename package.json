@@ -1,0 +1,14 @@
+{
+  "name": "piraran-open-ears",
+  "version": "1.0.0",
+  "description": "Código para el concierto en el festival Open Ears 2025.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@diegovdc/superdirt-socket": "^0.0.3"
+  }
+}
