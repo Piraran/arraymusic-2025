@@ -16,7 +16,12 @@ s.waitForBoot {
 		~dirt.loadSoundFiles(sampleFolderPath.postln);
 	});
 	~dirt.start(57120, ~orbits);
+	AKWFSuperDirt.init(s);
 };
 s.meter;
 s.latency = 0.3;
 );
+
+(// test
+Synth(\aguitar);
+)
