@@ -1,7 +1,7 @@
 (
 var path = thisProcess.nowExecutingPath.dirname;
-var env = (path ++ "/env.scd").load; // define ~orbits y ~samplePaths
-var extraSamplePaths = if(~samplePaths == nil, {[]}, {~samplePaths});
+var env = (path ++ "/env.scd").load; // define ~orbits y ~piraranSamplesPath
+
 Server.default.options.numOutputBusChannels = 28;
 Server.default.options.sampleRate = 48000;
 Server.default.options.memSize= 512000*20;
@@ -12,8 +12,17 @@ s.options.numBuffers = 1024 * 16;
 s.waitForBoot {
 	~dirt = SuperDirt(2, s);
 	~dirt.loadSoundFiles;
-	extraSamplePaths.do({|sampleFolderPath|
-		~dirt.loadSoundFiles(sampleFolderPath.postln);
+	[
+		"/maracas/",
+		"/maracasf/",
+		"/maracasp/",
+		"/maracasExp/",
+		"/maracasd/",
+		"/maracasAcc/",
+		"/maraDrums/",
+		"/ruletero/"
+	].do({|sampleFolderPath|
+		~dirt.loadSoundFiles((~piraranSamplesPath+/+sampleFolderPath).postln);
 	});
 	~dirt.start(57120, ~orbits);
 	AKWFSuperDirt.init(s);
