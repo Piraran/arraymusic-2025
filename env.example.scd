@@ -6,5 +6,6 @@
 	"/Users/diego/Music/code/piraran-samples/maracasExp/",
 	"/Users/diego/Music/code/piraran-samples/maracasd/",
 	"/Users/diego/Music/code/piraran-samples/maracasAcc/",
-	"/Users/diego/Music/code/piraran-samples/maraDrums/"
+	"/Users/diego/Music/code/piraran-samples/maraDrums/",
+	"/Users/diego/Music/code/piraran-samples/ruletero/"
 ];
