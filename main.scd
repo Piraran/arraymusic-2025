@@ -20,7 +20,10 @@ s.waitForBoot {
 		"/maracasd/",
 		"/maracasAcc/",
 		"/maraDrums/",
-		"/ruletero/"
+		"/ruletero/",
+		"kicks",
+		"hats",
+		"snares"
 	].do({|sampleFolderPath|
 		~dirt.loadSoundFiles((~piraranSamplesPath+/+sampleFolderPath).postln);
 	});

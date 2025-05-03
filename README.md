@@ -1,4 +1,4 @@
-# Open Ears
+# Arraymusic 2025
 
 Código para el concierto en el festival Open Ears 2025.
 
